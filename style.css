@@ -1,0 +1,557 @@
+.container {
+  display: flex;
+  gap: 8px;
+}
+.left {
+  margin-top: 2px;
+  width: 23vw;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.logo > span{
+  display: flex;
+  justify-content: space-between;
+}
+
+.close {
+  margin: 10px;
+  display: none;
+}
+
+.spo_logo{
+  width: 120px;
+  margin-left: 15px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  background: #121212;
+  border-radius: 10px;
+}
+
+.logo > img {
+  width: 120px;
+  margin: 0px 20px;
+  margin-top: 15px;
+}
+
+.logo ul {
+  margin: 0;
+  padding: 0;
+}
+.logo ul li {
+  width: 25px;
+  padding: 0px;
+  color: white;
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  font-weight: bold;
+  margin: 22px 20px;
+}
+
+.yourLib {
+  border-radius: 10px;
+  background: #121212;
+}
+
+.nav {
+  background-color: #101010;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  /* position: sticky; */
+  position: sticky;
+  top: 0;
+}
+
+.ltgt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding-left: 30px;
+}
+
+.ltgt img {
+  width: 25px;
+}
+
+
+
+.ltgt>:nth-child(1){
+  display: none;
+}
+
+.but1 {
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: transparent;
+  border: 0px;
+  color: #6a6a6a;
+  margin: 0px 15px;
+  cursor: pointer;
+}
+
+.but1:hover {
+  font-size: 1.01rem;
+  color: white;
+  transform: scale(1.02);
+  /* border: 2px solid green; */
+}
+
+.but2 {
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: white;
+  border: 0px;
+  border-radius: 99px;
+  box-sizing: border-box;
+  padding: 13px 28px;
+  margin: 0px 15px;
+}
+
+.but2:hover {
+  font-size: 20px;
+  /* padding:  14px 29px; */
+  transform: scale(1.02);
+}
+
+.yourLib {
+  height: 68vh;
+  overflow-y: hidden;
+  /* position: relative; */
+}
+
+.songlist ul {
+  padding-left: 0;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+
+  /* padding: 15px 0px 5px 15px; */
+}
+
+.songlist ul li {
+  list-style-type: none;
+  margin: 15px 0px;
+  padding: 10px;
+  font-size: small;
+  border: 2px solid white;
+  background-color: #242424;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.songname {
+  width: 70%;
+  padding: 3px;
+  overflow-y: hidden;
+  word-wrap: break-word;
+  font-size: 75%;
+}
+
+.crbr {
+  height: 80%;
+  /* background-color: red; */
+  overflow-y: scroll;
+}
+
+.crbr::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.crbr::-webkit-scrollbar-thumb {
+  background-color: #6a6a6a45;
+}
+
+.crbr::-webkit-scrollbar-button {
+  display: none;
+}
+
+.crbr::-webkit-scrollbar {
+  /* display: none; Hide scrollbar for Webkit-based browsers */
+  width: 5px;
+}
+
+.crbr:hover::-webkit-scrollbar {
+  display: block; /* Show scrollbar on hover */
+}
+
+.ys img {
+  width: 25px;
+}
+
+.ys ul {
+  padding: 0;
+}
+.ys li {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-weight: bold;
+}
+
+.parrow img {
+  width: 15px;
+  padding: 0px 10px;
+}
+
+.ys {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.createpl {
+  background-color: #242424;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.createpl :nth-child(1) {
+  font-weight: bold;
+
+  padding: 15px 0px 5px 15px;
+}
+
+.createpl :nth-child(2) {
+  padding: 5px 0px 15px 15px;
+}
+
+.createpl > button {
+  font-weight: bold;
+  padding: 5px 17px;
+  margin: 5px 0px 15px 15px;
+  border-radius: 20px;
+}
+
+.browsepd {
+  background-color: #242424;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.browsepd :nth-child(1) {
+  font-weight: bold;
+
+  padding: 15px 0px 5px 15px;
+}
+
+.browsepd :nth-child(2) {
+  padding: 5px 0px 15px 15px;
+}
+
+.browsepd > button {
+  font-weight: bold;
+  padding: 5px 17px;
+  margin: 5px 0px 15px 15px;
+  border-radius: 20px;
+}
+
+.right {
+  width: 75vw;
+  height: 95vh;
+  margin-top: 3px;
+  border-radius: 10px;
+  /* overflow-y: scroll; */
+  background-color: red;
+  background-color: #1c1c1c;
+  position: relative;
+}
+
+.rightContainer {
+  height: 75%;
+  background-color: #1c1c1c;
+  overflow-y: scroll;
+}
+
+.rightContainer h2 {
+  margin: 0px;
+  padding: 15px 15px 0px 15px;
+  /* margin-bottom: 10px; */
+}
+
+.cardContainer {
+  padding: 15px;
+  /* padding-left: 10px; */
+  display: flex;
+  z-index: 0;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  width: 12vw;
+  /* border: 2px solid green; */
+  border-radius: 5px;
+  position: relative;
+  padding: 10px;
+}
+
+.card:hover {
+  background-color: #2a2929;
+}
+
+.plbut {
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+}
+
+.card:hover .plbut {
+  bottom: 100px;
+  opacity: 1;
+}
+
+.rightContainer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.rightContainer::-webkit-scrollbar-thumb {
+  background-color: #6a6a6a;
+}
+
+.rightContainer::-webkit-scrollbar-button {
+  display: none;
+}
+
+.rightContainer::-webkit-scrollbar {
+  display: none; /*Hide scrollbar for Webkit-based browsers*/
+  width: 10px;
+}
+
+.rightContainer:hover::-webkit-scrollbar {
+  display: block; /* Show scrollbar on hover */
+}
+
+.card > img {
+  /* width:150px; */
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+/* .card {
+  height: 100px;
+  border: 2px solid green;
+} */
+
+.card p {
+  margin: 0;
+}
+
+.cardp2 {
+  color: #6a6a6a;
+  font-size: 18px;
+}
+
+.rightContainer {
+  position: relative;
+}
+
+.playb {
+  margin: 15px;
+}
+
+.playbar {
+  background-color: black;
+  width: 97%;
+  height: 12vh;
+
+  border-radius: 15px;
+  position: absolute;
+  bottom: 8px;
+}
+
+.pbsec1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7px;
+  padding: 0px 15px;
+}
+
+.songinfo {
+  width: 30%;
+  height: 20px;
+  font-size: 15px;
+  color: white;;
+  /* overflow-y: hidden;
+  white-Space : nowrap; */
+}
+
+.songtime{
+  font-size: 15px;
+}
+
+.seekbar {
+  background-color: #242424;
+  width: 95%;
+  height: 2px;
+  margin: 10px auto;
+  position: relative;
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+.circle{
+  width: 12px;
+  height: 12px;
+  border-radius: 99px;
+  position: absolute;
+  background-color: red;
+  top: -6px;
+  left: 0%;
+  transition: left 0.5s;
+}
+
+.songbuttons{
+  /* position: relative; */
+  /* right: 75px;
+  top: 8px; */
+/*  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+}
+
+.songbuttons > *{
+cursor: pointer;
+margin: 5px;
+}
+ 
+.volume{
+  display: block;
+}
+
+.volume{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+
+} 
+.vol{
+  cursor: pointer;
+}
+.volRange >input{
+  cursor: pointer;
+}
+
+
+
+/* --------------------------------------------------- */
+
+@media (max-width: 550px) {
+  .left{
+    width: 70vw;
+    height: 175vw;
+    background-color: black;
+    position: absolute;
+    left: -100%;
+    transition: all 0.5s ease-out;
+    z-index: 1;
+    animation-name: example;
+  }
+
+  .close {
+    margin: 10px;
+    display: block;
+    cursor: pointer;
+  }
+  
+
+  .right{
+    width: 100vw;
+    height: 97vh;
+    z-index: 0;
+  }
+
+.but1{
+  font-size: .8rem;
+  margin: 0px 0px;
+}
+
+  .but2{
+    font-size: .8rem;
+    font-weight: 700;
+    background-color: white;
+    border: 0px;
+    border-radius: 99px;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    margin: 0px 0px;
+  }
+
+  .cardContainer{
+    padding: 20px;
+  }
+
+  .ltgt>:nth-child(1){
+    display: block;
+  }
+
+  .ltgt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-left: 10px;
+  }
+
+
+  .card {
+    width: 35vw;
+    border-radius: 5px;
+    position: relative;
+    padding: 10px;
+}
+
+  .playbar{
+    right: 5px;
+  }
+
+  .pbsec1{
+    padding: 0px 5px;
+  }
+
+  .songinfo {
+    width: 30%;
+    height: 20px;
+    font-size: 10px;
+    color: white;
+}
+
+.songbuttons {
+  position: relative;
+  right: 20px;
+  top: 8px;
+}
+
+  .songtime {
+    font-size: 8px;
+}
+
+.volume{
+  display: none;
+}
+
+
+}

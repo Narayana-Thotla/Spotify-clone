@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.fFamily{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.li{
+    list-style: none;
+}
+
+

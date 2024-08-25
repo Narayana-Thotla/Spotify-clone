@@ -1,0 +1,130 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbars</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .section {
+            height: 100vh;
+            padding-top: 50px; /* Adjust according to navbar height */
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar1" class="navbar">Navbar 1</div>
+    <div id="navbar2" class="navbar">Navbar 2</div>
+    <div id="navbar3" class="navbar">Navbar 3</div>
+
+    <div id="section1" class="section" style="background-color: lightblue;">Section 1</div>
+    <div id="section2" class="section" style="background-color: lightgreen;">Section 2</div>
+    <div id="section3" class="section" style="background-color: lightcoral;">Section 3</div>
+
+    <script>
+        const sections = document.querySelectorAll('.section');
+        const navbars = document.querySelectorAll('.navbar');
+
+        function handleScroll() {
+            sections.forEach((section, index) => {
+                const rect = section.getBoundingClientRect();
+                const navbar = navbars[index];
+
+                if (rect.top <= 0 && rect.bottom >= 0) {
+                    navbar.classList.add('active');
+                } else {
+                    navbar.classList.remove('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbars</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            height: 100vh;
+            position: relative;
+        }
+        .navbar {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            transition: top 0.3s;
+        }
+        .sticky {
+            position: fixed;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="section1" class="section" style="background-color: lightblue;">
+        <div id="navbar1" class="navbar">Navbar 1</div>
+        Content of Section 1
+    </div>
+    <div id="section2" class="section" style="background-color: lightgreen;">
+        <div id="navbar2" class="navbar">Navbar 2</div>
+        Content of Section 2
+    </div>
+    <div id="section3" class="section" style="background-color: lightcoral;">
+        <div id="navbar3" class="navbar">Navbar 3</div>
+        Content of Section 3
+        
+    </div>
+
+    <script>
+        const sections = document.querySelectorAll('.section');
+        const navbars = document.querySelectorAll('.navbar');
+
+        function handleScroll() {
+            sections.forEach((section, index) => {
+                const navbar = navbars[index];
+                const rect = section.getBoundingClientRect();
+
+                if (rect.top <= 0 && rect.bottom >= navbar.offsetHeight) {
+                    navbar.classList.add('sticky');
+                } else {
+                    navbar.classList.remove('sticky');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+    </script>
+</body>
+</html>
+
